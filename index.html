@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Pane -->
+        <div class="left-pane">
+            <button class="show-hide-pane-btn" id="toggle-left-pane-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="top-header">
+                <button class="new-chat-btn" onclick="createNewChat()"> + New chat</button>
+                <button class="hide-pane-btn" id="toggle-left-pane-btn">=<i class="fas fa-bars"></i></button>
+            
+            </div>
+            <div class="chat-list">
+                <!-- Dummy chat items -->
+                <!-- Chat items will be added dynamically using JavaScript -->
+            </div>
+            <div class="profile-section">
+                <!-- Profile content goes here -->
+               
+                👤 Upgrade to plus
+                <h3>Ruchika pakala</h3>
+            </div>
+        </div>
+        
+        <!-- Right Pane -->
+        <div class="right-pane">
+            <div class="floating-buttons">
+                <button1 class="floating-btn"> ⚡ GPT-3.5 </button1>
+                <button2 class="floating-btn"> ✨GPT-4 🔒 </button2>
+            </div>
+            <div class="message-display">
+                <!-- Messages will be displayed here -->
+                <p1 id="chatgpt-message"><div class="chatgpt-message">ChatGPT</div></p1>
+            </div>
+                
+            <title>Four Boxes UI</title>
+</head>
+<body>
+    <div class="bottom-container">
+        <!-- Four Boxes Section -->
+        <div class="four-boxes-section">
+            <!-- Row 1 -->
+            <div class="left">
+                <div class="single-box" onmouseover="hoverBox(this)" onmouseout="unhoverBox(this)">
+                    <div class="box-content">
+                        <div class="box-heading">Create a personal webpage for me</div>
+                        <div class="box-description">after asking me three questions</div>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="single-box" onmouseover="hoverBox(this)" onmouseout="unhoverBox(this)">
+                    <div class="box-content">
+                        <div class="box-heading">Compare design principles</div>
+                        <div class="box-description">for mobile apps and desktop software</div>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="single-box" onmouseover="hoverBox(this)" onmouseout="unhoverBox(this)">
+                    <div class="box-content">
+                        <div class="box-heading">Barinstrom edge cases</div>
+                        <div class="box-description">for a function with birthdate as input, horscope out...</div>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="single-box" onmouseover="hoverBox(this)" onmouseout="unhoverBox(this)">
+                    <div class="box-content">
+                        <div class="box-heading">Explain airplane turbulence</div>
+                        <div class="box-description">to someone who has never flown before</div>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            
+        </div>
+            <div class="input-box">
+                <input id="message-input" type="text" placeholder="Send your message">
+                <button class="send-btn">✈️<i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

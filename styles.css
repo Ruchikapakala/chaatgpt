@@ -1,0 +1,285 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #ada8a8;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.left-pane {
+    width: 20%;
+    background-color: #262626;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(224, 222, 222, 0.1);
+    position: relative;
+    transition: width 0.3s;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-chat-btn {
+    width: 80%;
+    padding: 10px;
+    background-color: #414142;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color-scheme: light;
+}
+.new-chat-btn:hover{
+    background-color: #807d7d;
+}
+
+.hide-pane-btn {
+    width: 10%;
+    height: 30px;
+    background:#6f6f70;
+    border: none;
+    tab-size: 4px;
+    line-height: 20px;
+    min-height: 30px;
+    cursor: pointer;
+   
+}
+.hide-pane-btn:hover{
+    background-color: #514f4f;
+}
+.left-pane.hidden {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+}
+
+.show-hide-pane-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.show-sidebar-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 16px;
+    display: none; /* Initially hidden */
+}
+.left-pane.hidden {
+    display: none;
+}
+.show-hide-pane-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:#78787b;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+
+.chat-list {
+    margin-top: 20px;
+    overflow-y: scroll;
+    max-height: 70%;
+}
+
+.chat-item {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+
+.right-pane {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #f2ebeb;
+    border: none;
+    position: relative;
+}
+
+.floating-buttons {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   background-color: #f2ebeb;
+   border: none;
+   box-shadow:  #3f3e3e;
+
+    
+}
+
+.floating-btn {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color:  #f2ebeb;
+    color: #151515;
+    border: 2px solid #fffdfd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.floating-btn-group .floating-btn i {
+    margin-right: 5px;
+}
+.floating-btn:hover{
+    background-color: #494747; 
+}
+
+
+.message-display {
+    height: 70%;
+    border: none;
+    overflow-y: scroll;
+    padding: 8px;
+    margin-top: 20px;
+    background-color:  #f2ebeb;
+    color: #151414;
+}
+
+.input-box {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #f2ebeb;
+    border: none;
+    border-radius: 5px;
+    color:rgb(23, 22, 22);
+    width: 700px;
+    height: 30px;
+    
+  
+}
+
+.send-btn {
+    padding: 10px 20px;
+    background-color: #f2ebeb;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 70px;
+    height: 50px;
+}
+
+
+ p1 {
+    text-align: center;
+    margin-right: 300px;
+    color: #b2aeae;
+    font-size: 55px;
+    
+ }
+
+
+    
+
+.profile-section {
+    margin-top: 550px; /* Push the profile section to the bottom of the left pane */
+    text-align: left;
+    
+}
+
+.profile-section 👤 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile-section h3 {
+    color: rgb(251, 243, 243);
+    margin: 5px 0;
+}
+
+.profile-section p {
+    color: #9c9898;
+}
+
+
+
+.four-boxes-section {
+    display: flex;
+   
+    align-items: center;
+    margin-top: -80px;  /* Adjust the negative margin to lift the section*/
+    
+    
+}
+
+.single-box {
+    width: calc(95% - 10px);
+    background-color: #d6cece;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 50px;
+    margin-left: 110px;
+
+
+}
+
+.single-box:hover {
+    background-color: #292727;
+}
+
+.box-content {
+    padding: 10px;
+}
+
+.box-heading {
+    font-weight: bold;
+    color: #151414;
+}
+
+.box-description {
+    color: #545353;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
